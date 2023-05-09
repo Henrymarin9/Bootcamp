@@ -9,6 +9,8 @@
 
     <title>Hotel Cumbres</title>
 
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/normalizer.css">
     <link rel="stylesheet" href="../styles/styles.css">
 
     <link rel="icon" href="../favicons/android-chrome-192x192.png">
@@ -20,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="Body">
 
     <header class="Header">
         <picture>
@@ -36,8 +38,7 @@
             <span> -</span>
             <a href="./tarifas.html">Tarifas</a>
             <span> -</span>
-            <a href="./descuentos.html">Descuentos</a>
-
+            <a href="./medios-de-contacto.html">Medios de contacto</a>
         </nav>
     </aside>
 
@@ -48,46 +49,49 @@
             <article>
 
                 <header>
-                    <h2>Contactanos</h2>
+                    <h2 style="text-align: center">Actvidades recreativas</h2>
                 </header>
-
+                
                 <main>
-                    <h3 style="text-align: center;">Envianos un formulario</h3>
+                    <h3><a id="cabañas" href="">Cabañas</a></h3>
 
-                    <div id="form">
-                        <fieldset>
-                            <form method="post">
-                                <label>
-                                    Nombre: 
-                                    <input type="text" placeholder="name" maxlength="10">
-                                </label>
-                                <label>
-                                    Apellido:
-                                    <input type="text" placeholder="lastname" >
-                                </label>
-                                <label>
-                                    Email:
-                                    <input type="email" placeholder="user@direcion.com">
-                                </label>
-                                <label>
-                                    Contraceña:
-                                    <input type="password" placeholder="password" minlength="8" maxlength="20">
-                                </label>
-                                <label>
-                                    <span>¿Que alojamiento es de su interes?</span>
-                                    Cabaña
-                                    <input type="radio" name="alojamiento" id="cabaña">
-                                    Hotel
-                                    <input type="radio" name="alojamiento" id="hotel">
-                                </label>
-                                <label>
-                                    <textarea name="" placeholder="Cuentanos cuales son tus consultas" id="" cols="30" rows="10"></textarea>
-                                </label>
-                                <button>Enviar</button>
-                            </form>
-                        </fieldset>
+                    <div class="actividades"> 
+                        <p>
+                            Quo deserunt possimus nam ratione eos, quidem inventore, rerum architecto ad nisi tempora quisquam beatae eum obcaecati voluptatibus libero harum excepturi commodi vero sunt saepe. Est quia sint dolore inventore?
+                            Nesciunt error minus aliquid, deleniti perspiciatis voluptates incidunt nisi hic similique sit asperiores voluptatum impedit, sint ipsum placeat dolore distinctio. Provident cumque nostrum maiores, dicta libero eos fugiat laboriosam sed!
+                            Aliquam, architecto molestias! Laboriosam, officia assumenda? Incidunt voluptatum a similique necessitatibus facilis illo quod provident modi soluta, ipsa atque accusantium iste nihil rem officiis sit dolor ea perspiciatis culpa deserunt!
+                        </p>
+                        <picture>
+                            <img loading="lazy" width="500px" src="https://static.wixstatic.com/media/7e8500_70e0e7bcc5884c7a8d79a163e3d4e054~mv2.jpg/v1/fill/w_2500,h_1875,al_c/7e8500_70e0e7bcc5884c7a8d79a163e3d4e054~mv2.jpg" alt="imagen de cabañas">
+                        </picture>
                     </div>
 
+                    <h3><a id="carpas" href="">Carpas</a></h3>
+
+                    <div class="actividades">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsum aliquam porro neque, culpa qui aperiam dolore quaerat dolores repellat minus dicta unde accusamus officiis aspernatur, modi debitis harum quae.
+                            Possimus expedita hic praesentium laboriosam eaque molestias sequi consequatur ratione, explicabo voluptates repellendus deserunt quo nobis incidunt laudantium illum, id earum accusamus, minima saepe corporis facilis! Veritatis quasi autem beatae?
+                            Voluptate dolorem sint doloremque aut odio voluptatibus mollitia ipsum iusto, qui debitis distinctio numquam aliquam vel vitae sunt voluptatem nam! Dolores iusto voluptatum laboriosam voluptatibus dolor ducimus! Mollitia, laudantium tempore!
+                        </p>
+                        <picture>
+                            <img loading="lazy" width="500px" src="https://img.freepik.com/fotos-premium/carpas-bosque-vacaciones-salvajes-camping-bosque-viajeros-dosel_175677-208.jpg?w=2000" alt="imagen de carpas azules">
+                        </picture>
+                    </div> 
+
+                    <h3><a id="bicis" href="">Bicicletas</a></h3>
+
+                    <div class="actividades">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sequi libero temporibus voluptatum, ut porro at sunt voluptatem enim deleniti provident repudiandae maiores, nemo voluptates optio alias architecto quasi laudantium?
+                            Maiores odit tenetur, quidem libero minus architecto commodi alias magnam sit deserunt voluptate amet ex earum facere nisi distinctio, nostrum culpa quisquam autem voluptatem repudiandae sint illum. Similique, provident quos?
+                            Asperiores modi inventore porro autem, libero iure eaque recusandae velit corrupti, perferendis dolores vel repudiandae debitis! Quas rem officiis enim, maiores libero, quis asperiores possimus repudiandae esse dolore molestiae laborum.
+                        </p>
+                        <picture>
+                            <img width="500px" src="https://conexioncentro.com.ar/wp-content/uploads/2018/11/pintoBT-01-887x500.jpg" alt="imagen de bicicletas en el rio">
+                        </picture>
+                    </div>
+                        
                 </main>
             </article>
         </section>
@@ -147,6 +151,7 @@
             </article>
         </section>
     </footer>
-       
+    
+    
 </body>
 </html>

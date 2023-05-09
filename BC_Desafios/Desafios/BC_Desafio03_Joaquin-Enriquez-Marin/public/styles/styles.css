@@ -31,7 +31,7 @@ html{
 
 /*Main*/
 
-.Main{}
+.Main{margin-bottom: 10rem;}
 .Main section{}
 .Main section article{}
 .Main section article header{}
@@ -72,15 +72,15 @@ html{
     margin: 0.5rem;
 }
 
-div{
+#map{
     display: flex;
     margin-bottom: 100px;
 }
-div p{
+#map p{
     padding: 1rem;
     width: 50%;
 }
-div iframe{
+#map iframe{
     border: 2rem solid #775548;
     border-radius: 2rem;
 }
@@ -106,4 +106,25 @@ fieldset form{
     display: flex;
     flex-flow: column nowrap;
     flex-direction: column;   
+}
+
+.actividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.actividades p{
+    width: 50vw;
+}
+
+#cabañas, #carpas, #bicis{
+    margin-left: 3rem;
+    text-decoration:underline;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
