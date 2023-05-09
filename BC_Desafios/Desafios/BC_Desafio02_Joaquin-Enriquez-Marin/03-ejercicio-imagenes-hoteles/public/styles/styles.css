@@ -1,0 +1,71 @@
+@charset "UFT-8";
+
+html{
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: fit-content;
+}
+
+
+
+/*Header*/
+
+.Header section article header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header section article header picture img{
+    width: 400px;
+    height: 250px;
+}
+.Header section article header h1{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
+/*Aside*/
+
+.Aside section article main nav{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #5A76B1;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/*Main*/
+
+.Main{
+    margin: 3rem;
+    margin-bottom: 10rem;
+}
+
+p{color: #5A76B1;}
+h1, h2{color: #B25498;}
+
+img{width: 40vw;}
+#right{float: right;}
+#left{float: left;}
+
+/*Footer*/
+.Footer{margin: 1rem;}
+#scale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#scale img{
+    scale: 3;
+}

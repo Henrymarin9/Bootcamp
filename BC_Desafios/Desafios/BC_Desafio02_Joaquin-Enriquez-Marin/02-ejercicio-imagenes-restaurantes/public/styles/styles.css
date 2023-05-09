@@ -1,0 +1,44 @@
+@charset "UFT-8";
+
+html{
+    background-color: #289688;
+    font-size: 18px;
+    min-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Header*/
+.Header{}
+.Header section
+.Header section article{}
+.Header section article header{}
+
+.Header section article header h1{
+    font-size: 2rem;
+    color: yellow;
+    text-align: center;
+}
+/*Main*/
+.Main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.Main section{}
+.Main section article{}
+
+.Main section article main{
+    margin: 0;
+    text-align: center;}
+
+.Main section article main picture{}
+
+.Main section article main picture img{
+    margin: 0.5rem;
+    border: 1rem solid white;
+}
+
+

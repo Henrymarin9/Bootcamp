@@ -1,0 +1,105 @@
+@charset "UFT-8";
+
+/*HTML*/
+html{
+    font-size: 18px;
+    line-height: 1.5;
+    min-width: 600px;
+}
+/*Body*/
+.Body{margin: 0;}
+.Body .Header{}
+
+/*Header*/
+.Header{}
+.Header section{}
+.Header section article{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.Header section article header{
+    background-color:#222288ab;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    padding-left: 1.15rem;
+}
+#icon{margin: 0;}
+#icon img{margin-top: 0.25rem;}
+#title{
+    color: #222288;
+    font-size: 3rem;  
+    margin-left: 0.5rem;
+    
+}
+
+.Header section article aside{
+    background-color:#222288;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.Header section article aside nav{margin-right: 2rem;}
+.Header section article aside nav a{}
+
+a{
+    text-decoration: none;
+    color: #6B6BAF;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.466);
+}
+
+/*Aside*/
+
+/*Main*/
+.Main{
+    background-color: #6B6BAF;
+    margin: 0;
+}
+.Main section{
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.Main section article{}
+.Main section article header{}
+.Main section article header h2{
+    font-size: 2rem;
+    color: #1d1d68;
+}
+.h3color h3{color: #222288;}
+
+/*General*/
+h2, h3{
+    font-family: Impact, Charcoal, sans-serif;
+}
+p{
+    font-family: Arial, Gadget, sans-serif;
+}
+
+
+/* Page: "productos" */
+
+h3{font-size: 1.50rem;}
+
+#aspiradora{color: #E5C8B9;}
+#img_01{border: 5px solid #E5C8B9;}
+#celular{color: #A5C6D0;}
+#img_02{border: 5px solid #A5C6D0;}
+#consola{color:#BFC0C2;}
+#img_03{border:5px solid #BFC0C2;}
+#home{color: #8D95A2;}
+#img_04{border: 5px solid #8D95A2;}
+#televisor{color: #B2B2AA;}
+#img_05{border: 5px solid #B2B2AA;}
+

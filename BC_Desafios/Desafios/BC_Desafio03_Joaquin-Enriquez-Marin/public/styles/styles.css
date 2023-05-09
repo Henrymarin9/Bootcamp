@@ -1,0 +1,109 @@
+@charset "UFT-8";
+html{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 18px;
+    
+}
+
+.Body{
+    line-height: 1.5;
+    margin: 0.25rem;
+}
+
+/*Header*/
+
+.Header{}
+.Header picture{
+
+}
+.Header picture img{width: 98vw;}
+
+/*Aside*/
+
+.Aside{}
+.Aside nav{}
+.Aside nav a{
+    font-size: 1.25rem;
+    color: #EF6D24;
+    font-weight: bold;
+}
+.Aside nav span{}
+
+/*Main*/
+
+.Main{}
+.Main section{}
+.Main section article{}
+.Main section article header{}
+.Main section article header h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #775548;
+}
+.Main section article {}
+
+.Main section article main article header{
+    background-color: #775548;
+    color: #E1D4CF;
+    font-size: 1.25rem;
+}
+.Main{
+    color: #775548;
+}
+.orange{color: #EF6D24;}
+#blue{color: #3BAFC6;}
+#red{color: #EF5851;}
+
+/*Footer*/
+
+.Footer{
+    margin-top: 20px;
+    padding: 2rem;
+    background-color: #775548;
+
+}
+
+.Footer section article main ul li{
+    display: flex;
+    align-items: center;
+    margin: 2.5rem;
+}
+.Footer section article main ul li figure{
+    margin: 0.5rem;
+}
+
+div{
+    display: flex;
+    margin-bottom: 100px;
+}
+div p{
+    padding: 1rem;
+    width: 50%;
+}
+div iframe{
+    border: 2rem solid #775548;
+    border-radius: 2rem;
+}
+
+table{
+    
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table tr td{
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+th{
+    text-align: center;
+    border: 1px solid black;
+}
+fieldset{width: 25vw;}
+fieldset form{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;   
+}
