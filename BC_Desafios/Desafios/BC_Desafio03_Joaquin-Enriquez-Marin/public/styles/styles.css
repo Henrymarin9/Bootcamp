@@ -1,10 +1,11 @@
 @charset "UFT-8";
+
 html{
     font-family: Verdana, Arial, sans-serif;
     font-size: 18px;
     min-width: 500px;
 }
-
+/*Body*/
 .Body{
     line-height: 1.5;
     margin: 0.25rem;
@@ -13,9 +14,7 @@ html{
 /*Header*/
 
 .Header{}
-.Header picture{
-
-}
+.Header picture{}
 .Header picture img{width: 98vw;}
 
 /*Aside*/
@@ -31,7 +30,10 @@ html{
 
 /*Main*/
 
-.Main{margin-bottom: 10rem;}
+.Main{
+    margin-bottom: 10rem;
+    color: #775548;
+}
 .Main section{}
 .Main section article{}
 .Main section article header{}
@@ -47,12 +49,12 @@ html{
     color: #E1D4CF;
     font-size: 1.25rem;
 }
-.Main{
-    color: #775548;
-}
+
+/*links*/
 .orange{color: #EF6D24;}
 #blue{color: #3BAFC6;}
 #red{color: #EF5851;}
+
 
 /*Footer*/
 
@@ -60,7 +62,6 @@ html{
     margin-top: 20px;
     padding: 2rem;
     background-color: #775548;
-
 }
 
 .Footer section article main ul li{
@@ -68,59 +69,53 @@ html{
     align-items: center;
     margin: 2.5rem;
 }
-.Footer section article main ul li figure{
-    margin: 0.5rem;
-}
+
+.Footer section article main ul li figure{margin: 0.5rem;}
+
+/*page: "como-llegar.html"*/
 
 #map{
     display: flex;
     margin-bottom: 100px;
 }
+
 #map p{
     padding: 1rem;
     width: 50%;
 }
+
 #map iframe{
     border: 2rem solid #775548;
     border-radius: 2rem;
 }
 
+
+/*page: "tarifas.html"*/
+
 table{
-    
     margin: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-collapse:collapse;
 }
+
 table tr td{
     padding: 10px;
-    border: 1px solid black;
-    margin-left: 5px;
+    border: 1px solid black;  
 }
-th{
-    text-align: center;
-    border: 1px solid black;
-}
+
+th{text-align: center;}
+
+
+/*page: "medios-de-contacto.html"*/
+
 fieldset{width: 25vw;}
+
 fieldset form{
     display: flex;
     flex-flow: column nowrap;
     flex-direction: column;   
-}
-
-.actividades{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.actividades p{
-    width: 50vw;
-}
-
-#cabañas, #carpas, #bicis{
-    margin-left: 3rem;
-    text-decoration:underline;
 }
 
 #form{
@@ -128,3 +123,20 @@ fieldset form{
     justify-content: center;
     align-items: center;
 }
+
+
+/*page: "actividades.html"*/
+
+.actividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.actividades p{width: 50vw;}
+
+#cabañas, #carpas, #bicis{
+    margin-left: 3rem;
+    text-decoration:underline;
+}
+
