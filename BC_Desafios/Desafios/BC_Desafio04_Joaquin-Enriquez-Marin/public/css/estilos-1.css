@@ -27,8 +27,9 @@ html{
     justify-content: center;
     align-items: center;
     height: 100px;
-
     background-color: #BC105C;
+
+    
     border-left: 0.25rem solid white;
     border-right: 0.25rem solid white;
 }
@@ -53,7 +54,8 @@ html{
     height: 100px;
     
     display: flex;
-    align-items: center;   
+    align-items: center;
+    justify-content: space-between;  
      
 }
 .Main section .header{
@@ -133,4 +135,12 @@ html{
 }
 .Footer section article h4{
     color: white;
+}
+
+/*Otros*/
+#decoracion, #gif{display: none;}
+
+/*page: compras.html*/
+nav {
+    justify-content: center;
 }
