@@ -1,0 +1,1 @@
+En esta carpeta se alojan ejercicios para la comprension de la logica de JS de la pagina web: https://www.arkaitzgarro.com/javascript/capitulo-18.html#ej21

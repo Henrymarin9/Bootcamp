@@ -1,0 +1,15 @@
+@charset "UFT-8";
+
+html{
+    font-size: 18px;
+    line-height: 1.5;
+}
+header 
+
+*{
+    font-family: 'Chivo Mono', monospace;
+
+}
+picture img{
+    width: 30%;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <!--    **************
+            *FORMULARIOS *   
+            **************   -->
+
+    <header>
+        <h1>Enunciado 1</h1>
+    </header>
+    <aside>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </aside>
+    <main>
+        <form action="">
+            <label>
+                <!--TEXTO--> 
+                Nombre <br> 
+                <input type=”text” name="text" placeholder= "Nombre Completo" maxlength=”10”> 
+            </label>
+            <br>
+            <label>
+                <!--CONTRASEÑA-->
+                Contraceña <br>
+                <input type="password" name="password" placeholder="pass" id="password" maxlength="20" minlength="8"> 
+            </label>
+            <br>
+            <label>
+                <!--EMAIL-->
+                Email <br>
+                <input type=”email” required placeholder=”info@dominio.com” > 
+            </label>
+            <br>
+            <label>
+                <!--NUMEROS-->
+                Edad <br> 
+                <input type="number" name="edad" id="" min="18" max="90">
+            </label>
+            <br>
+            <label>
+                 <!--BOTON (submit)-->
+                <input type="submit" value="Enviar formulario">
+            </label>
+            <br>
+            <label>
+                <!--CHECKBOX-->
+                <input type="checkbox" name="checkbox" id="primer_checkbox" checked>
+                <span>Palermo</span>
+                <br>
+                <input type="checkbox" name="checkbox" id="primer_checkbox">
+                <span>Recoleta</span>
+                <br>
+                <input type="checkbox" name="checkbox" id="primer_checkbox">
+                <span>Belgrano</span>
+            </label>
+            <br>
+            <label>
+                <!--RADIOBUTTON-->
+                Sexo <br>
+                <input type="radio" name="sexo" value="hombre" checked>
+                <span>Hombre</span>
+                <br>
+                <input type="radio" name="sexo" value="mujer">
+                <span>Mujer</span>
+            </label> 
+            <br>
+            <form action="" method="post" enctype="multipart/form-data">
+                <label >
+                    <input type="file" name="archivo">
+                </label>
+            </form>
+        </form>
+        <!--LISTA DESPLEGABLE-->
+        <select>
+            <option value=”opcion1”>Opción 1</option>
+            <option value=”opcion2” selected>Opción 2</option>
+        </select>
+        <br>
+        <textarea name="comentario" id="coment" cols="30" rows="10" placeholder="Deja tu comentario"></textarea>
+
+        <!--FORMA DE ESQUEMATIZAR UN FORMULARIO-->
+        <form>
+            <fieldset style="width: 60px;">
+                <legend>Datos personales</legend>
+                Nombre: <input type=”text”> <br>
+                E-mail: <input type=”text”> <br>
+                Edad: <input type=”number”>
+            </fieldset>
+        </form>
+
+        <form id="formulario" action="codigo.php" method="post">
+            <label for="">Nombre y Apellido<input type="text" placeholder="Nombre y Apellido"></label>
+            <label for="">Email<input type="email" placeholder="info1@gmial.com, info2@gmail.com" multiple></label>
+            <!--PATRONES A RESPETAR: https://www.html5pattern.com/-->
+            <label for="">Contraseña<input type="password" name="" id="" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></label>
+            
+            <label for="">Edad<input type="number" min="18" max="90" step="2"></label><!--step: segmenta entre numeros pares e impares min y max dan el rango entre el cual se puede colocar la edad-->
+
+            <label ><input type="checkbox" name="Eleccicon" value="Larrata">Larrata</label>
+            <label ><input type="checkbox" name="Eleccicon" value="ElPeluca">ElPeluca</label>
+            <label ><input type="checkbox" name="Eleccicon" value="CaraTucan">CaraTucan</label>
+
+            <label><input type="file" multiple> Archivos</label>
+            
+            <label for="direccion">Direccion</label>
+            <input id="direccion" type="text" placeholder="">
+            <label>
+                <br>
+                Acepto terminos  condiciones
+                <input type="checkbox" name="" id="">
+            </label>
+
+        </form>
+
+        <select name="paises">
+            <option value="" selected>Elegir</option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="brasil">Brasil</option>
+        </select>
+        <select name="autos" multiple>
+            <option value="" selected>Elegir</option>
+            <option value="fiat">Fiat</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="volvo">Volvo</option>
+        </select>
+
+        <button onclick="alert('Hola soy JS')">Hace click</button>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

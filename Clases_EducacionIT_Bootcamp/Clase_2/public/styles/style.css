@@ -1,0 +1,40 @@
+@charset "UFT-8";
+
+/*px rem em in cm % vw vh ch fr 
+    Unidades Absolutas: 100px
+    Unidades Relativas: 50%
+*/
+
+/*Para movil se usa 16 o 18 px como raiz*/
+
+html{
+    font-size: 18px;
+    background-color: beige;
+    max-width: 1400px;
+}
+
+/*
+.header{}
+
+.header .section{}
+
+.header .section .article{}
+
+.header .section .article .header{}
+*/
+
+.header { 
+    color: brown;
+    font-size: 2rem; /*     18px * 2rem = 32px      */
+    font-size: 15em;
+}
+
+.header #parrafoAzul{color: aqua;}
+
+/*
+.aside{}
+
+.main{}
+
+.footer{}
+*/

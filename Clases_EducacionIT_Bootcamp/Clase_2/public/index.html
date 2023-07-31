@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--METAS PARA CONFIGURACION DEL NAVEGADOR-->
+
+    <!--Le estoy hablando al motor del navegador y le estoy diciendo la escala del ancho de la web se adapte al 100% de la pantalla del dispositivo del cliente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=1.0">
+
+    <!-- Tema legales: Sirve para colocar quien hizo la web (persona/empresa), a quien le pertenece o quien la creo sirve ara teams de derecho de autor-->
+    <meta name="author" content="Joaquin Enriquez Marin">
+
+    <meta name="author" content="authors.txt">
+    <meta name="copyright" content="Ref. to author | 2023 todos los derechs reservados">
+
+    <!--Sirve para que el robot de busqueda posisione la pagina. tenemos que describir en breves palabras todo el contenido de mi web   HAY QUE USAR PALABRAS CLAVES palab-->
+    <meta name="description" content="Brindamos cursos de HTML Y CSS de orma virtual">
+
+    <!--Sirve para marcar las palabras clave, pero no es tan importante el navegador no lo toma tan encuenta pero es mejor que este a que no, google castiga el uso de keywords-->
+    <meta name="keywords" content="HTML, HTML5, CSS, CSS3, JS, JavaScript, Bootcamp">
+
+    <!--OTROS METAS relacionados con css-->
+
+    <!-- // le pregunta al navegador si esta en NORMAL/LIGHT/DARK en caso de estar en dark usa el link y saca los estilos desde ahi -->
+    <meta name="theme-color" content="normal">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+
+    <meta name="theme-color" content="dark" media="prefers-color-schme:dark"> 
+    <link rel="stylesheet" type="text/css" media="all and (prefers-color-schme:dark)" href="./styles/style__dark.css">
+
+    <meta name="theme-color" content="light" media="prefers-color-schme:light">
+    <link rel="stylesheet" type="text/css" media="all and (prefers-color-schme:light)" href="./styles/style__light.css">
+
+    <title>Bootcamp HTML</title>
+    <!-- Pagina web con logos para la prestaña de busqueda:  https://favicon.io/ usamos distintos arcivos para que el motor del navegador detecte el dispositivo y en base a eso pone un favicon o otro -->
+
+    <link rel="icon" href="./imagenes/favicon.ico">
+    <link rel="icon" href="./imagenes/favicon/android-chrome-192x192.png">
+    <link rel="icon" href="./imagenes/favicon/android-chrome-512x512.png">
+    <link rel="icon" href="./imagenes/favicon/apple-touch-icon.png">
+    <link rel="icon" href="./imagenes/favicon/favicon-16x16.png">
+    <link rel="icon" href="./imagenes/favicon/favicon-32x32.png">
+
+    <!--JS puede estar al final de head o al final de body uno va a cargar de arriba a abajo y el otro va a cargar de abajo para arriba
+    defer signfica: guarda el script pero no lo ejecutes hasta no cargar todo el html 
+    defer viene de diferido
+    async es el defualt-->
+
+    <script src="app/app.js" defer></script>
+    
+    <script src="app/app20.js" async></script>
+ 
+
+
+</head>
+<body class="body">
+    <header class="header">
+        <p>Parrafo1</p>
+        <p id="parrafoAzul">Parrafo2</p> 
+        <p>Parrafo3</p>
+
+    </header>
+    <aside class="aside"></aside>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+
+    <section class="section">
+        <article class="article">
+            <header class="header"></header>
+            <aside class="aside"></aside>
+            <main class="main"></main>
+            <footer class="footer"></footer>
+        </article>
+    </section>
+    <script src="app/app.js"></script>
+</body>
+</html>

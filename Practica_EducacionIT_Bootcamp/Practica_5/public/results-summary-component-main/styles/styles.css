@@ -1,0 +1,220 @@
+@charset "UFO-8";
+
+figure{
+    display: inline;
+    margin: 0;
+    
+}
+
+html{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+}
+
+.Body{
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+.Header{}
+
+.Header .section{}
+
+.Header section article h1{
+    text-align: center;
+}
+
+
+/* Aside */
+
+.Main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    min-height: 600px;
+}
+
+.Main .Section{
+    width: 700px;
+    height: 70vh;
+    display: flex;
+
+    border-radius: 2rem;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+}
+
+.Main .Section .Article{
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+
+.Main .Section .Article:first-child {
+
+    background: hsla(220, 78%, 29%, 1);
+
+    background: radial-gradient(circle, hsla(220, 78%, 29%, 1) 21%, hsla(221, 21%, 32%, 1) 100%);
+
+    background: -moz-radial-gradient(circle, hsla(220, 78%, 29%, 1) 21%, hsla(221, 21%, 32%, 1) 100%);
+
+    background: -webkit-radial-gradient(circle, hsla(220, 78%, 29%, 1) 21%, hsla(221, 21%, 32%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#103783", endColorstr="#414C64", GradientType=1 );
+
+    color: snow;
+    text-align: center;
+
+    
+}
+
+.Main .Section .Article:first-child .header{
+    height: 10%;
+    color: rgba(255, 250, 250, 0.7);
+}
+.Main .Section .Article:first-child .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    
+    margin: 5% 25% 5% 25%;
+    background-color:rgb(29, 29, 71);
+    border-radius: 50%;
+
+    box-sizing: border-box;
+    padding: 2rem;
+    
+}
+.Main .Section .Article:first-child .main h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.Main .Section .Article:first-child .main p{
+    color: rgba(255, 250, 250, 0.7);
+    margin: 0;
+}
+.Main .Section .Article:first-child .footer{
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.Main .Section .Article:first-child .footer h2{
+    font-size: 1.5rem;
+    color: rgba(255, 250, 250, 0.9);
+}
+.Main .Section .Article:first-child .footer p{
+    color: rgba(255, 250, 250, 0.7);
+}
+
+
+
+/*White Card*/
+
+.Main .Section .Article:last-child{
+
+    background-color: snow;
+    text-align: left;
+}
+
+.Main .Section .Article:last-child header{
+    margin-left: 10%;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+ul{padding: 0;}
+.Main .Section .Article:last-child .main ul{
+    width: 80%;
+    margin: 10%;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bold{
+    font-weight: bold;
+}
+.grey{
+    color: #9E9E9D;
+    font-weight: bold;
+}
+
+li{
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div figure{margin-right: 0.25rem;}
+#reaction{
+    background-color: #ffb6b64d;
+    
+}
+#red{
+    font-weight: bold;
+    color: #FF5555;
+}
+#memory{
+    background-color: #fbd38a52;
+}
+#yellow {
+    font-weight: bold;
+    color: #FFB934;
+}
+#verbal{
+    background-color: #2fc4a150;
+}
+#green{
+    font-weight: bold;
+    color: #00BB8F;
+}
+#visual{
+    background-color: #2e3fda59;
+}
+#blue{
+    font-weight: bold;
+    color: #1B2ED8;
+}
+.Main .Section .Article:last-child .main ul li span:last-child{
+    text-align: right;
+}
+
+.Main .Section .Article:last-child .header{}
+.Main .Section .Article:last-child .main{}
+
+.Main .Section .Article:last-child .footer{
+    text-align: center;
+    
+}
+button{
+    all: unset;
+    width: 70%;
+    border-radius: 3rem;
+    
+    background: hsla(220, 78%, 29%, 1);
+
+    background: radial-gradient(circle, hsla(220, 78%, 29%, 1) 21%, hsla(221, 21%, 32%, 1) 100%);
+
+    background: -moz-radial-gradient(circle, hsla(220, 78%, 29%, 1) 21%, hsla(221, 21%, 32%, 1) 100%);
+
+    background: -webkit-radial-gradient(circle, hsla(220, 78%, 29%, 1) 21%, hsla(221, 21%, 32%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#103783", endColorstr="#414C64", GradientType=1 );
+}
+button p{
+    color: rgba(255, 250, 250, 0.9);
+    margin: 2.5%;
+}
+
+
+
