@@ -1,0 +1,102 @@
+body {
+  background-color: wheat;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: wheat;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section picture img {
+  width: 375px;
+}
+section article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  /*            
+              & picture{
+                  height: 15rem;
+                  background-image: url(../../images/image-product-mobile.jpg);
+                  background-repeat: no-repeat;
+
+                  background-size: 100%;
+
+
+              }
+  */
+}
+section article #card {
+  background-color: white;
+  padding: 1.25rem;
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+}
+section article #card header h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+section article #card main p {
+  color: rgba(0, 0, 0, 0.692);
+}
+section article #card footer div {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+section article #card footer div h2 {
+  font-size: 2.5rem;
+  color: green;
+  font-weight: bold;
+}
+section article #card footer div h4 {
+  color: rgba(0, 0, 0, 0.315);
+  text-decoration: line-through;
+}
+section article #card footer div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section article #card footer div:nth-child(2) button {
+  color: white;
+  background-color: green;
+  text-align: center;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+}
+
+@media (min-width: 376px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*          
+                & picture{
+                    width: 40rem;
+                    height: 40rem;
+                    background-image: url(../../images/image-product-desktop.jpg);
+                    background-repeat: no-repeat;
+                    background-size: 50%;
+
+
+                }
+    */
+  }
+}/*# sourceMappingURL=styles.css.map */

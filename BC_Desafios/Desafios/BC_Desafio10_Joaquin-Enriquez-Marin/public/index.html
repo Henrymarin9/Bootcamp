@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../scr/app.js" defer></script>
+  <title>Formulario</title>
+</head>
+<body>
+  <form class="form">
+    
+    <label class="form__label" for="primer-nombre">Primer nombre:</label>
+
+    <input class="form__input" type="text" id="primer-nombre" name="primer-nombre" required minlength="3" maxlength="10" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñüÜ]+" title="Ingresa de 3 a 10 letras, solo en mayúsculas o minúsculas">
+
+    <label class="form__label" for="primer-apellido">Primer apellido:</label>
+
+    <input class="form__input" type="text" id="primer-apellido" name="primer-apellido" required minlength="2" maxlength="20" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñüÜ' ]+" title="Ingresa de 2 a 20 caracteres, letras o apóstrofes">
+
+    <label class="form__label">Tipo de documento:</label>
+    
+    <div class="form__radio-group">
+      <input type="radio" id="dni" name="tipo-documento" value="DNI" required>
+      <label for="dni">DNI</label>
+      <input type="radio" id="cuil" name="tipo-documento" value="CUIL" required>
+      <label for="cuil">CUIL</label>
+    </div>
+
+    <label class="form__label" for="numero-documento">Número de documento:</label>
+    <input class="form__input" type="text" id="numero-documento" name="numero-documento" required>
+
+    <label class="form__label" for="direccion">Dirección:</label>
+    <textarea class="form__input form__textarea" id="direccion" name="direccion" required minlength="10" maxlength="200" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñüÜ0-9 ,.\-'/°]+" title="Ingresa una direccion de correo electronico valida"></textarea>
+
+    <div class="form__errors"></div>
+
+    <button class="form__submit-btn" type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+

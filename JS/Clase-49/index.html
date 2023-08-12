@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=input, initial-scale=1.0">
+    <title>EVENTOS JS</title>
+</head>
+<body>
+    <input type="text" oninput="mostrarInput(event)">
+    <!--oninput es igual que el onclick sirve para dar un llamado a consola por cada tecla que precionemos-->
+    
+    <!--
+        <input type="text" onchange="mostrarInput(event)">
+        
+        Parecido al otro la unica diferencia es que no aparecera en consola hasta no salir del cuadrante-->
+    <button>Apretame!</button>
+    
+    <div id="output"></div>
+
+    <script>
+
+        let output = document.getElementById("output")
+        let button = document.querySelector("button")
+        boton.addEventListener("click", cambiarBgColor)
+        /* .addEventListener("click", cambiarBgColor) : el segundo parametro es la funcion que va a capturar el evento que es el primer parametro */
+        console.log(output)
+        output.innerHTML = "Hola como estas?"
+        
+        function mostrarInput(event){
+            if(event.target.value !== ""){
+                console.log("El elemento esta con texto")
+                output.innerHTML = event.target.value
+            }else{
+                output.innerHTML = "Por favor ingrese un valor al texto"
+            }
+        }
+
+        function cambiarBgColor(){
+            output.style.backgroundColor = "blue"
+        }
+    </script>
+</body>
+</html>
