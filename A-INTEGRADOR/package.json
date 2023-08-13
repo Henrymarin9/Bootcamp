@@ -1,0 +1,12 @@
+{
+  "name": "a-integrador",
+  "version": "1.0.0",
+  "description": "Author: Joaquin Enriquez Marin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scr/Styles/styles.sass:public/styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

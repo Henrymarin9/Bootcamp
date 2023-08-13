@@ -1,0 +1,16 @@
+@use "../Abstracts/_h-fonts" as F;
+@use "../Mixins/_mixins" as M;
+
+
+html {
+    font-size: F.$fontSize;
+    font-family: F.$fontFamily;
+    font-weight: F.$fontWeight400;
+    line-height: F.$lineHeight;
+    text-align: center;
+  }
+
+.Body{
+    @include M.grid(repeat(12, 1fr), 100px 600px auto 200px);
+}
+
