@@ -1,0 +1,31 @@
+@use "../Abstracts/h-colors" as C;
+@use "../Abstracts/h-fonts" as F;
+@use "../Mixins/mixins" as M;
+@use "./l-html" as H;
+
+.Main{
+    grid-column: 2/12;
+    
+
+    & section{
+
+        @include M.grid(repeat(12, 1fr), auto);
+        grid-row: 2/3;
+        gap: 2rem;
+        padding: 2rem;
+
+        & article {
+            
+            @include M.flex(flex-start, auto, column);
+            gap: 2rem;
+            grid-column:  4 span ;
+            
+
+
+            
+        }
+        
+    }
+    
+
+}
