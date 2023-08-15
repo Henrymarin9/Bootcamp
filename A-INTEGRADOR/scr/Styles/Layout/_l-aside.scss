@@ -7,4 +7,15 @@
     background-position: -1100px -1200px;
     
     
+    
 }
+
+@media(max-width:765px){
+    .Aside{
+        grid-column: 1/9;
+        grid-row: 2/3;
+        
+    }
+
+}
+

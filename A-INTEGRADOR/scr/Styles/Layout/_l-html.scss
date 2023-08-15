@@ -5,12 +5,24 @@
 html {
     font-size: F.$fontSize;
     font-family: F.$fontFamily;
-    font-weight: F.$fontWeight400;
+    font-weight: F.$fontWeight100;
     line-height: F.$lineHeight;
-    text-align: center;
+
+    
   }
 
 .Body{
     @include M.grid(repeat(12, 1fr), 100px 600px auto 200px);
+    width: 100%;
 }
+
+@media(max-width:765px){
+  .Body{
+    @include M.grid(repeat(8, 1fr), 100px 600px auto auto);
+    
+  }
+}
+
+
+
 

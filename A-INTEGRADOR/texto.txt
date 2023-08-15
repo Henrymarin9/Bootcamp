@@ -33,4 +33,4 @@ Definir qué tipo de elementos HTML y validaciones debe tener cada campo del for
 Al igual que en el archivo index.html, podrán agregar otros elementos a las páginas libremente.
 
 ***** nosotros.html *****
-Página con contenido libre.
+Página con contenido libre. 

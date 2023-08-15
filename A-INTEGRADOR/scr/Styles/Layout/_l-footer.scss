@@ -16,7 +16,7 @@
         
         text-align: left;
 
-        @include M.grid(repeat(12, 1fr), auto);
+        @include M.grid(repeat(12, 1fr), 100px);
 
         & article {
             @include M.flex(space-evenly, flex-start);
@@ -32,16 +32,27 @@
 
             &:nth-child(1){
                 grid-column: 1/4;
-                grid-row: 2/3;
+                grid-row: 1/2;
                 font-size: 0.65rem;
 
             }
             &:nth-child(2){
-                grid-column: 5/9;
-                grid-row: 2/3;
+                grid-column: 8/12;
+                grid-row: 1/3;
                 font-size: 0.65rem;
             }
         }
         
     }
 }
+
+@media(max-width:765px){
+    .Footer{
+        grid-column: 1/9;
+        grid-row: 4/5;
+        
+    }
+
+
+}
+

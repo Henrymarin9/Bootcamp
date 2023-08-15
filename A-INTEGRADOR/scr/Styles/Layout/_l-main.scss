@@ -4,21 +4,30 @@
 @use "./l-html" as H;
 
 .Main{
-    grid-column: 2/12;
-    
+    grid-column: 1/13;
+    background-color: C.$c-seasalt;
+    padding-bottom: 2rem;
 
-    & section{
+    @include M.grid(repeat(12,1fr), auto);
 
-        @include M.grid(repeat(12, 1fr), auto);
-        grid-row: 2/3;
-        gap: 2rem;
+
+    & .component-cards{
         padding: 2rem;
+        grid-column: 1/13;
+        grid-row: 3/4;
+        
+        
 
-        & article {
-            
-            @include M.flex(flex-start, auto, column);
+        & ul {
+            @include M.grid(repeat(12, 1fr), auto);
             gap: 2rem;
-            grid-column:  4 span ;
+            & li{
+
+                @include M.flex(flex-start, center, column);
+                gap: 2rem;
+                grid-column:  4 span ;
+                
+            }
             
 
 
@@ -28,4 +37,19 @@
     }
     
 
+}
+
+@media (max-width:765px){
+    .Main{
+        grid-column: 1/9;
+        grid-row: 3/4;
+        
+        & .component-cards ul li{
+
+            @include M.flex(flex-start, center, column);
+            gap: 2rem;
+            grid-column:  6 span ;
+            
+        }
+    }
 }

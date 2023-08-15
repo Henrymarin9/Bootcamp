@@ -1,0 +1,32 @@
+@use "../Abstracts/h-colors" as C;
+@use "../Abstracts/h-fonts" as F;
+@use "../Mixins/mixins" as M;
+
+
+.card{
+    border-radius: 0.5rem 0.5rem;
+    background-color: gainsboro;
+    @include M.flex(center, center, column);
+    
+    & header{
+        
+        & picture{
+            
+            & img{
+                border-radius: 0.5rem 0.5rem 0 0;              
+            }
+            
+            
+        }
+    }
+     
+    & main{
+        
+        border-radius: 0 0 0.5rem 0.5rem;  
+        padding: 0.5rem 1rem;
+
+        & h3{
+            font-weight: F.$fontWeight300;
+        }
+    }
+}
