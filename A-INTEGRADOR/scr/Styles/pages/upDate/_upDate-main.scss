@@ -1,0 +1,32 @@
+@use "../../Abstracts/h-fonts" as F;
+@use "../../Abstracts/h-colors" as C;
+@use "../../Mixins/mixins" as M;
+
+
+.upDate-form{
+    background-color: aqua;
+    grid-column: 2/12;
+
+    & form{
+        
+        & fieldset{
+            @include M.flex(start,start,column);
+
+            & label{
+                @include M.flex(start,start,column);
+                border: 1px solid black;
+                
+                & .radio{
+                    border: 1px solid black;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                }
+                
+            
+            }
+        }
+        
+
+    }
+}

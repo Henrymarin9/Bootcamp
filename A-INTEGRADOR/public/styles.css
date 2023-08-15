@@ -8,7 +8,6 @@
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
   display: revert;
 }
 
@@ -423,6 +422,11 @@ html {
   line-height: 1.5rem;
 }
 
+a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+
 .Body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -442,6 +446,11 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   line-height: 1.5rem;
+}
+
+a {
+  color: #dee2e6;
+  text-decoration: none;
 }
 
 .Body {
@@ -525,6 +534,11 @@ html {
   line-height: 1.5rem;
 }
 
+a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+
 .Body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -547,10 +561,21 @@ html {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
 }
+.Main .title {
+  padding: 2rem;
+  grid-column: 1/13;
+  grid-row: 1/2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 1rem;
+}
 .Main .component-cards {
   padding: 2rem;
   grid-column: 1/13;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 .Main .component-cards ul {
   display: grid;
@@ -586,6 +611,11 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   line-height: 1.5rem;
+}
+
+a {
+  color: #dee2e6;
+  text-decoration: none;
 }
 
 .Body {
@@ -656,11 +686,36 @@ html {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .card main {
+  color: black;
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 0.5rem 1rem;
 }
 .card main h3 {
   font-weight: 300;
+}
+
+.upDate-form {
+  background-color: aqua;
+  grid-column: 2/12;
+}
+.upDate-form form fieldset {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column;
+}
+.upDate-form form fieldset label {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-flow: column;
+  border: 1px solid black;
+}
+.upDate-form form fieldset label .radio {
+  border: 1px solid black;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */

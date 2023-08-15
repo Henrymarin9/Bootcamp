@@ -10,11 +10,18 @@
 
     @include M.grid(repeat(12,1fr), auto);
 
-
+    & .title{
+        padding: 2rem;
+        grid-column: 1/13;
+        grid-row: 1/2;
+        text-align: center;
+        @include M.flex(center,center,column);
+        gap: 1rem;
+    }
     & .component-cards{
         padding: 2rem;
         grid-column: 1/13;
-        grid-row: 3/4;
+        grid-row: 2/3;
         
         
 
