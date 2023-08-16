@@ -14,11 +14,17 @@ a{
   color: C.$c-platinum;
   text-decoration: none
 }
+p {
+  font-weight: F.$fontWeight100;
+  color: rgba(0, 0, 0, 0.733);
+}
 
 .Body{
     @include M.grid(repeat(12, 1fr), 100px 600px auto 200px);
     width: 100%;
+
 }
+
 
 @media(max-width:765px){
   .Body{

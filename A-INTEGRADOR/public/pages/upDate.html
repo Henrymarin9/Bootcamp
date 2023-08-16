@@ -59,43 +59,53 @@
         </section>
 
         <section class="upDate-form">
+            <h2>Lorem ipsum dolor sit amet.</h2>
             <form>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <fieldset>
-
+                <div id="category">
+                    <h4>Categorias:</h4>
                     <label>
-                        Categoria:
-                        <input type="radio" name="category" class="radio">
-                        <input type="radio" name="category"class="radio">
-                        <input type="radio" name="category"class="radio">
-                        <input type="radio" name="category"class="radio">
-                    </label>
-                    
-                    <label>
-                        Titulo del Producto:
-                        <input type="text" placeholder="Nombre del producto" maxlength="20">
+                        <input type="radio" name="category">
+                        <span>Cuerdas</span>
                     </label>
 
                     <label>
-                        Subtitulo del Producto:
-                        <textarea name="sub" id="sub" cols="30" rows="10"></textarea>
+                        <input type="radio" name="category">
+                        <span>Pianos</span>
                     </label>
 
                     <label>
-                        Descripcion:
-                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                        <input type="radio" name="category">
+                        <span>Percucion</span>
                     </label>
 
                     <label>
-                        Insertar una imagen:
-                        <input type="file">
+                        <input type="radio" name="category">
+                        <span>Vientos</span>
                     </label>
-                </fieldset>
-
-                <button>Enviar</button>
+                </div>
                 
+                <label class="labels">
+                    
+                    <input type="text" maxlength="20" placeholder="Titulo del Producto:">
+                    
+                </label>
 
+                <label class="labels">
+                    
+                    <input type="text" placeholder="Subtitulo del Producto:">
+                </label>
+
+                <label class="labels">
+                    <textarea name="description" id="description" cols="60" rows="5" placeholder="Descripcion:"></textarea>
+                </label>
+
+                <label class="labels">
+                    <input type="file" placeholder="Insertar una imagen:">
+                </label>
+                <button>Enviar</button>
+            
             </form>
+            
         </section>
 
         
