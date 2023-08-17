@@ -13,7 +13,6 @@
     & .title{
         padding: 2rem;
         grid-column: 1/13;
-        grid-row: 1/2;
         text-align: center;
         @include M.flex(center,center,column);
         gap: 1rem;
@@ -22,12 +21,13 @@
         padding: 2rem;
         grid-column: 1/13;
         grid-row: 2/3;
-        
+        overflow: hidden;
         
 
         & ul {
             @include M.grid(repeat(12, 1fr), auto);
             gap: 2rem;
+           
             & li{
 
                 @include M.flex(flex-start, center, column);
@@ -51,12 +51,19 @@
         grid-column: 1/9;
         grid-row: 3/4;
         
-        & .component-cards ul li{
+        
+        & .component-cards ul {
 
-            @include M.flex(flex-start, center, column);
-            gap: 2rem;
-            grid-column:  6 span ;
+                @include M.grid(repeat(12, 1fr), auto);
+                gap: 2rem;
+                
+            & li{
+
+                @include M.flex(flex-start, center, column);
+                gap: 2rem;
+                grid-column:  6 span ;
             
+            } 
         }
     }
 }

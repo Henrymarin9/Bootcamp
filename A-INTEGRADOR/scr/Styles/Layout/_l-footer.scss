@@ -20,7 +20,7 @@
 
         & article {
             @include M.flex(space-evenly, flex-start);
-
+            padding: 1rem;
             & h5{
                 font-size: 0.8rem;
             }
@@ -34,6 +34,7 @@
                 grid-column: 1/4;
                 grid-row: 1/2;
                 font-size: 0.65rem;
+                
 
             }
             &:nth-child(2){
@@ -50,6 +51,7 @@
     .Footer{
         grid-column: 1/9;
         grid-row: 4/5;
+        padding: 1rem;
         
     }
 
