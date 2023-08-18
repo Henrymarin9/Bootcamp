@@ -16,7 +16,7 @@
         
         text-align: left;
 
-        @include M.grid(repeat(12, 1fr), 100px);
+        @include M.grid(repeat(12, 1fr), 100px 100px);
 
         & article {
             @include M.flex(space-evenly, flex-start);

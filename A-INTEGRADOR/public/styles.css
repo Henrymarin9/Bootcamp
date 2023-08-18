@@ -590,13 +590,18 @@ p {
   padding: 2rem;
   grid-column: 1/13;
   grid-row: 2/3;
-  overflow: hidden;
-}
-.Main .component-cards ul {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
+}
+.Main .component-cards ul {
+  grid-column: 2/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
+  padding: 0;
 }
 .Main .component-cards ul li {
   display: flex;
@@ -604,29 +609,9 @@ p {
   align-items: center;
   flex-flow: column;
   gap: 2rem;
-  grid-column: 4 span;
+  grid-column: span 4;
 }
 
-@media (max-width: 765px) {
-  .Main {
-    grid-column: 1/9;
-    grid-row: 3/4;
-  }
-  .Main .component-cards ul {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    gap: 2rem;
-  }
-  .Main .component-cards ul li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: column;
-    gap: 2rem;
-    grid-column: 6 span;
-  }
-}
 html {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -670,7 +655,7 @@ p {
   text-align: left;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px;
+  grid-template-rows: 100px 100px;
 }
 .Footer section article {
   display: flex;
@@ -703,20 +688,37 @@ p {
   }
 }
 .card {
-  border-radius: 0.5rem 0.5rem;
   background-color: gainsboro;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  width: 18rem;
+  height: 25rem;
 }
-.card header picture img {
-  border-radius: 0.5rem 0.5rem 0 0;
+.card header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.card header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .card main {
+  max-height: 25%;
   color: rgba(0, 0, 0, 0.9333333333);
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 0.5rem 1rem;
+  overflow: hidden;
 }
 .card main h3 {
   font-weight: 300;
