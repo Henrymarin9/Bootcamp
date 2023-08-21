@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="../styles.css">
 
+    <!--Script-->
+    <script src="../../scr/JS/scripts/form-update.js"></script>
+
 </head>
 
 <body class="Body">
@@ -58,9 +61,10 @@
             </p>
         </section>
 
-        <section class="upDate-form">
+        <section class="form">
             <h2>Lorem ipsum dolor sit amet.</h2>
-            <form>
+            
+            <form id="upDate-form">
                 <div id="category">
                     <h4>Categorias:</h4>
                     <div id="check">
@@ -69,10 +73,9 @@
                                 <input type="radio" name="category">
                                 <span>Cuerdas</span>
                             </label>
-
                             <label>
                                 <input type="radio" name="category">
-                                <span>Pianos   </span>
+                                <span>Pianos</span>
                             </label>
                         </div>
                         <div>
@@ -80,7 +83,6 @@
                                 <input type="radio" name="category">
                                 <span>Percucion</span>
                             </label>
-
                             <label>
                                 <input type="radio" name="category">
                                 <span>Vientos</span>
@@ -88,34 +90,29 @@
                         </div>
                     </div>
                 </div>
-                
+        
                 <label class="labels">
-                    
-                    <input type="text" maxlength="20" placeholder="Titulo del Producto:">
-                    
+                    <input type="text" id="titulo" maxlength="20" placeholder="Titulo del Producto:">
                 </label>
-
+        
                 <label class="labels">
-                    
-                    <input type="text" placeholder="Subtitulo del Producto:">
+                    <input type="text" id="subtitulo" placeholder="Subtitulo del Producto:">
                 </label>
-
+        
                 <label class="labels">
                     <textarea name="description" id="description" cols="60" rows="5" placeholder="Descripcion:"></textarea>
                 </label>
-
+        
                 <label class="labels">
-                    <input type="file" placeholder="Insertar una imagen:">
+                    <input type="file" id="file" placeholder="Insertar una imagen:">
                 </label>
-
+        
                 <label>
-                    <button>Enviar</button>
+                    <button id="submitButton">Enviar</button>
                 </label>
-
-                
-            
+                <p id="errorDisplay" class="error-message"></p>
             </form>
-            
+
         </section>
 
         <section class="title">

@@ -20,7 +20,7 @@ p {
 }
 
 .Body{
-    @include M.grid(repeat(12, 1fr), 100px 600px auto 200px);
+    @include M.grid(repeat(12, 1fr), 100px 600px auto auto);
     width: 100%;
 
 }

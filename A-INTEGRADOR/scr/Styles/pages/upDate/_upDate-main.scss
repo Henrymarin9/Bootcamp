@@ -5,7 +5,7 @@
 .Main {
 
 
-    & .upDate-form{
+    & .form{
     
         grid-column: 1/13;
         border-radius: 0.33rem;
@@ -88,6 +88,9 @@
                     padding: 0.5rem 2rem;
 
                 }
+            }
+            #errorDisplay{
+                color: red; font-weight: F.$fontWeight300;
             }
         }
 

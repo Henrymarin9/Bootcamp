@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="../styles.css">
 
+    <!--Scrips-->
+    <script src="../../scr/JS/scripts/form-contact.js"></script>
+
 </head>
 
 <body class="Body">
@@ -56,6 +59,32 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus iusto atque in consectetur est at ipsa minima nulla possimus, ullam soluta accusamus vitae quod sed adipisci eius nisi corporis.
             </p>
+        </section>
+
+        <section class="form">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            
+            <form id="contact-form">
+                
+        
+                <label class="labels">
+                    <input type="text" id="nombre" maxlength="20" placeholder="Nombre">
+                </label>
+        
+                <label class="labels">
+                    <input type="text" id="apellido" placeholder="Apellido">
+                </label>
+        
+                <label class="labels">
+                    <input type="email" id="email" placeholder="Email: user@gmail.com">
+                </label>
+        
+                <label>
+                    <button id="submitButton">Enviar</button>
+                </label>
+                <p id="errorDisplay" class="error-message"></p>
+            </form>
+
         </section>
 
     </main>

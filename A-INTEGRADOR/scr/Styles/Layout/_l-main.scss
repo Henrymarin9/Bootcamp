@@ -22,7 +22,7 @@
         padding: 2rem;
         grid-column: 1/13;
         grid-row: 2/3;
-        
+        overflow: hidden;
         
         @include M.grid(repeat(12, 1fr), auto);
 
