@@ -72,6 +72,8 @@ window.onload = function() {
             successMessage.style.fontWeight = 300;
             errorDisplay.insertAdjacentElement('afterend', successMessage);
             //form.submit();
+            window.location.href = "D:\\OneDrive\\Escritorio\\EducacionIT_Bootcamp\\A-INTEGRADOR\\public\\index.html";
+            console.log(window);
         } else {
             successMessage.textContent = '';
         }

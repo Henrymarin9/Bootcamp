@@ -30,7 +30,6 @@ ol, ul, menu {
 
 /* For images to not be able to exceed their container */
 img {
-  max-inline-size: 100%;
   max-block-size: 100%;
 }
 
@@ -658,17 +657,17 @@ p {
   height: 100%;
   overflow: hidden;
   grid-column: 2/12;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  flex-flow: column;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
 }
 .Footer section div {
+  grid-column: 2/12;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
-  flex-flow: wrap;
 }
 .Footer section article {
   display: flex;
@@ -690,6 +689,10 @@ p {
 }
 .Footer section article:nth-child(3) {
   grid-column: 10/13;
+}
+.Footer section #log {
+  grid-column: 2/12;
+  grid-row: 2/3;
 }
 
 @media (max-width: 765px) {

@@ -15,14 +15,16 @@
 
     & section {
         height: 100%;
-        overflow: hidden; // Ultimo agregado continuar con la maquetacion y diseño del footer y el header
+        overflow: hidden;
         grid-column: 2/12;
-        @include M.flex(space-evenly,start,column);
+        grid-row: 1/2;
+        //@include M.flex(space-evenly,start,column);
+        @include M.grid(repeat(12,1fr),auto);
 
         & div{
-            
+            grid-column: 2/12;
             width: 100%;
-            @include M.flex(space-between,start,wrap);
+            @include M.flex(space-between,start);
         }
 
         & article {
@@ -46,6 +48,11 @@
                 
             }
             &:nth-child(3){grid-column: 10/13;}
+        }
+
+        & #log{
+            grid-column: 2/12;
+            grid-row: 2/3;
         }
         
     }

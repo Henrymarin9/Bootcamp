@@ -36,20 +36,3 @@ Al igual que en el archivo index.html, podrán agregar otros elementos a las pá
 Página con contenido libre.
 
 
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Formulario con Validación</title>
-    <style>
-
-    </style>
-</head>
-<body>
-
-
-    <script>
-        
-    </script>
-</body>
-</html>
