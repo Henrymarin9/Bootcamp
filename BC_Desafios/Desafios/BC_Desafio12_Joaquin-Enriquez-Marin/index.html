@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Lista de Contactos</h1>
+    <div id="contact-form">
+        <h2>Agregar Contacto</h2>
+        <form id="add-contact-form">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="birthdate" placeholder="Fecha de Nacimiento (YYYY-MM-DD)" required>
+            <input type="text" id="id" placeholder="ID Único" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <div id="error-message"></div>
+    </div>
+    <div id="contact-list">
+        <!-- Contactos se listarán aquí -->
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
