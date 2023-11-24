@@ -1,0 +1,55 @@
+@use "../Abstracts/h-colors" as C;
+@use "../Abstracts/h-fonts" as F;
+@use "../Mixins/mixins" as M;
+@use "./l-html" as H;
+
+.Main{
+    grid-column: 1/13;
+    background-color: C.$c-seasalt;
+    padding-bottom: 2rem;
+
+    @include M.grid(repeat(12,1fr), auto);
+
+    & .title{
+        padding: 2rem;
+        grid-column: 1/13;
+        text-align: center;
+        @include M.flex(center,center,column);
+        gap: 1rem;
+    }
+    & .component-cards{
+        
+        padding: 2rem;
+        grid-column: 1/13;
+        grid-row: 2/3;
+        overflow: hidden;
+        
+        @include M.grid(repeat(12, 1fr), auto);
+
+        & ul {
+            grid-column: 2/12;
+            @include M.flex(center, center);
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0;
+          
+            & li{
+
+                @include M.flex(flex-start, center, column);
+                gap: 2rem;
+                grid-column: span 4;
+
+            }
+          
+
+
+            
+        }
+        
+        
+    }
+    
+
+}
+
+

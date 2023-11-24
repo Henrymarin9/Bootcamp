@@ -1,0 +1,38 @@
+@use "../Abstracts/_h-fonts" as F;
+@use "../Abstracts/h-colors" as C;
+@use "../Mixins/_mixins" as M;
+
+
+html {
+    font-size: F.$fontSize;
+    font-family: F.$fontFamily;
+    font-weight: F.$fontWeight100;
+    line-height: F.$lineHeight;
+    
+  }
+a{
+  color: C.$c-platinum;
+  text-decoration: none
+}
+p {
+  font-weight: F.$fontWeight100;
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.Body{
+    @include M.grid(repeat(12, 1fr), 100px 600px auto auto);
+    width: 100%;
+
+}
+
+
+@media(max-width:765px){
+  .Body{
+    @include M.grid(repeat(8, 1fr), 100px 600px auto auto);
+    
+  }
+}
+
+
+
+

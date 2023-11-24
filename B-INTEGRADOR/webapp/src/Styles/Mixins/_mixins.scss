@@ -1,0 +1,19 @@
+
+@mixin grid($colums, $rows) {
+
+    display: grid;
+    grid-template-columns: $colums;
+    grid-template-rows: $rows;
+    
+}
+
+@mixin flex ($justify:false, $align:false, $flow:false, $direction:false, $wrap:false){
+
+    display: flex;
+
+    @if $justify    {   justify-content:    $justify;      };
+    @if $align      {    align-items:       $align         };
+    @if $flow       {   flex-flow:          $flow          };
+    @if $direction  {   flex-direction:     $direction     };
+    @if $wrap       {   flex-wrap:          $wrap          };
+}

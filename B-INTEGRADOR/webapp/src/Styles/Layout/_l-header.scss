@@ -1,0 +1,63 @@
+@use "../Abstracts/h-fonts" as F;
+@use "../Abstracts/h-colors" as C;
+@use "./l-html" as H;
+@use "../Mixins/mixins" as M;
+
+
+.Header{
+    grid-column: 1/13;
+    grid-row: 1/2;
+    
+    background-color: C.$c-black;
+    color: C.$c-platinum;
+
+    & section{
+        @include M.grid(repeat(12, 1fr),100px);
+        overflow: hidden;
+
+        & article{
+            @include M.flex(flex-start, center);
+            padding: 1rem;
+
+            h1{
+                font-weight:F.$fontWeight600;
+            }
+
+            &:nth-child(1){
+                grid-column: 1/5;
+                grid-row: 1/1;
+                
+            }
+            &:nth-child(2){
+                grid-column: 6/13;
+                justify-content: end;
+                grid-row: 1/1;
+                
+
+                & ul{
+                    @include M.flex(center, center);
+                    gap: 2rem;
+
+                    & li{
+
+                        & a:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            
+        }
+    }
+}
+
+@media(max-width:765px){
+    .Header{
+        grid-column: 1/9;
+        grid-row: 1/2;
+    }
+}
+
