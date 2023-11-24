@@ -1,11 +1,12 @@
+// Agregar.jsx
 import React, { useState, useEffect } from 'react';
+import ProductList from '../UpDate/ProductList';
 
 function Agregar() {
   const [productList, setProductList] = useState([]);
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-
     fetch('http://localhost:5000/ecommerce/products')
       .then((response) => response.json())
       .then((data) => {
@@ -16,16 +17,19 @@ function Agregar() {
       });
   }, []);
 
+  const handleProductAdd = (newProduct) => {
+    setProductList([...productList, newProduct]);
+  };
+
   const handleAddToCart = (product) => {
     setCart([...cart, product]);
 
-    
     fetch('http://localhost:5000/ecommerce/cart', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ productId: product._id }), 
+      body: JSON.stringify({ productId: product._id }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -38,26 +42,7 @@ function Agregar() {
 
   return (
     <div>
-      <main className="Main">
-        <section className="component-cards">
-          <ul>
-            {productList.map((product, index) => (
-              <li key={index}>
-                <article className="card">
-                  <header>
-                    <picture>{/* Mostrar la imagen del producto aca */}</picture>
-                  </header>
-                  <main>
-                    <h3>{product.titulo}</h3>
-                    <p>{product.subtitulo}</p>
-                    <button onClick={() => handleAddToCart(product)}>Agregar al carrito</button>
-                  </main>
-                </article>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </main>
+      <ProductList productList={productList} onAddToCart={handleAddToCart} />
     </div>
   );
 }

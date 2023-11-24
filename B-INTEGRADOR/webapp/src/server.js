@@ -35,14 +35,14 @@ app.post('/ecommerce/products', async (req, res) => {
 app.post('/ecommerce/cart', async (req, res) => {
   try {
     const productIdToAdd = req.body.productId;
-
-
     const updatedCart = await Cart.findByIdAndUpdate(
-    
-      cartId,
+      // Supongo que tienes un modelo de Carrito y que tiene un campo `productos` que es un array
+      // Reemplaza "Cart" con el nombre de tu modelo de carrito
+      cartId, // Reemplaza cartId con el ID real del carrito
       { $push: { productos: productIdToAdd } },
       { new: true }
     );
+    res.json(updatedCart);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Error al agregar el producto al carrito.' });
